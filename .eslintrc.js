@@ -11,7 +11,8 @@ module.exports = {
     },
     "globals": {
         "__webpack_public_path__": true,
-        "process": true
+        "process": true,
+        "__dirname":true
     },
     "rules": {
         "indent": ['error', 4, { 'SwitchCase': 1 }],
