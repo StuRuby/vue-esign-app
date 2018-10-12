@@ -47,5 +47,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: '../public/index.html'
         }),
-    ]
+    ],
+    resolve: {
+        extensions: ['.vue', '.js', '.json']
+    }
 };
