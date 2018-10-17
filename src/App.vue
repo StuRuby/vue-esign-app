@@ -5,7 +5,7 @@
     </div>
 </template>
 <script>
-    import Menu from './components/shared/menu/index.vue';
+    import Menu from './components/shared/Menu/menu.vue';
 
     export default {
         components:{

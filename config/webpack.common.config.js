@@ -32,7 +32,16 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|gif|jpe?g|svg|xml|json)$/,
+                test: /\.styl$/,
+                use: [
+                    'style-loader',
+                    'vue-style-loader',
+                    'css-loader',
+                    'stylus-loader'
+                ]
+            },
+            {
+                test: /\.(png|gif|jpe?g|svg|xml|json|ttf|woff)$/,
                 use: ['url-loader']
             },
             {
