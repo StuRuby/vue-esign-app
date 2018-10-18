@@ -1,6 +1,3 @@
-
-export const ApiRoot: 'http://153.3.219.11:18188/wafa';
-
 export default {
     // 用户
     User: {
