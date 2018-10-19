@@ -1,12 +1,19 @@
 <template>
-
+  <div>
+    <carousel></carousel>
+    <div>测试专用</div>
+  </div>
 </template>
 
 <script>
+import carousel from "../../components/home/carousel";
 export default {
   name: "home",
   data: function() {
     return {};
+  },
+  components: {
+    carousel
   },
   created: function() {
     this.$http

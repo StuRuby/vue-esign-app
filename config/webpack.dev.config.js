@@ -7,9 +7,9 @@ const devWebpackConfig = merge(commonWebpackConfig, {
     mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: path.resolve(__dirname,'../dist'),
+        contentBase: path.resolve(__dirname, '../dist'),
         compress: true,
-        port: 3000
+        port: 3000,
     },
     plugins: [
         new webpack.DefinePlugin({

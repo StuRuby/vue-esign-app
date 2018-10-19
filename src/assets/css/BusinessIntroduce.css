@@ -1,0 +1,184 @@
+.business .business-wid {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.business .mx-gray {
+  background: #f4f4f4;
+}
+
+.business .business-wid-178 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 1 */
+
+.business .business-produce-rd {
+  padding: 50px 0;
+  position: relative;
+  /* border-bottom: 1px dashed #dcdcdc; */
+  overflow: hidden;
+}
+
+/* 2 */
+
+.business .business-produce-bt {
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  padding: 70px 0 50px;
+}
+
+.business .business-produce-ys {
+  /* padding-bottom: 60px; */
+}
+
+.business .business-produce-ys ul {
+  overflow: hidden;
+}
+
+.business ul,
+.business ol {
+  list-style-type: none;
+}
+
+.business .business-produce-ys li {
+  float: left;
+  width: 320px;
+  height: 250px;
+  margin-right: 80px;
+  min-height: 250px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.business .business-produce-ys .one {
+  background-position: -149px -382px;
+}
+
+.business .business-produce-ys span {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.business .business-img {
+  background: url(../copyImg/fdd_all.png) no-repeat;
+}
+
+.business .business-produce-ys i {
+  display: inline-block;
+  vertical-align: bottom;
+  font-style: normal;
+  font-size: 22px;
+  color: #be926f;
+  margin-left: 5px;
+  padding-bottom: 10px;
+}
+
+.business .business-produce-ys .business-produce-ba {
+  color: #333;
+  /* font-weight: bold; */
+  padding: 30px 0 5px;
+}
+
+.business .business-produce-ys p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.business .business-produce-ys .two {
+  background-position: -208px -454px;
+}
+
+.business .business-produce-ys .three {
+  background-position: -270px -382px;
+}
+
+.business .business-produce-ys .four {
+  background-position: -208px -382px;
+}
+
+.business .business-produce-ys .five {
+  background-position: -149px -454px;
+}
+
+.business .business-produce-ys .six {
+  background-position: -270px -454px;
+}
+
+/* tu */
+
+.business .business-produce-rd .business-produce-l {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.business .mx-img img {
+  width: 850px;
+}
+
+.business img {
+  vertical-align: middle;
+  border: 0;
+}
+
+.business h3 {
+  color: #be926f;
+}
+
+/* 4 */
+
+.business .e_contract-value {
+  margin: 56px 0 70px;
+}
+
+.business .e_contract-value ul {
+  text-align: center;
+}
+
+.business .e_contract-value ul li {
+  border-radius: 10px;
+  float: left;
+  width: 370px;
+  height: 240px;
+  margin: 0 24px 24px 0;
+  text-align: center;
+  border: 1px solid #dec9b8;
+  box-shadow: 0 0 0 #be926f;
+  transform: scale(1, 1);
+}
+
+.business .e_contract-value ul li .e_contract-value-img {
+  width: 110px;
+  height: 65px;
+  margin: 20px auto 16px;
+}
+
+.business .e_contract-value ul li .e_contract-value-img {
+  background-image: url(../copyImg/6.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.business .e_contract-value ul li .e_contract-value-title {
+  display: block;
+  font-size: 1.28571429rem;
+  font-size: 18px\9;
+  line-height: 30px;
+  color: #333;
+  text-decoration: none;
+}
+
+.business .e_contract-value ul li .e_contract-value-content {
+  display: block;
+  font-size: 0.8rem;
+  font-size: 12px\9;
+  color: #999;
+  text-align-last: left;
+  line-height: 20px;
+  margin: 15px 35px;
+}
