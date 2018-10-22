@@ -1,20 +1,23 @@
 <template>
-    <el-menu mode="horizontal">
-        <template v-for="(menuItem) in menus">
-            <template v-if="menuItem.type==='item'">
-                <menuItem :key="menuItem.id" :menu="menuItem">
-                </menuItem>
-            </template>
-            <template v-if="menuItem.type==='subMenu'">
-                <subMenu :key="menuItem.id" :menu="menuItem"></subMenu>
-            </template>
+  <sticky-box left='0' :top='setTop'>
+    <el-menu mode="horizontal" background-color="#000" class="el-menu-center" text-color="#fff" active-text-color="#be926f">
+      <template v-for="(menuItem) in menus">
+        <template v-if="menuItem.type==='item'">
+          <menuItem :key="menuItem.id" :menu="menuItem">
+          </menuItem>
         </template>
+        <template v-if="menuItem.type==='subMenu'">
+          <subMenu :key="menuItem.id" :menu="menuItem"></subMenu>
+        </template>
+      </template>
     </el-menu>
+  </sticky-box>
 </template>
 
 <script >
 import menuItem from "./menuItem.vue";
 import subMenu from "./subMenu.vue";
+import stickyBox from "../sticky";
 
 export default {
   name: "Menu",
@@ -26,7 +29,21 @@ export default {
   },
   components: {
     menuItem,
-    subMenu
+    subMenu,
+    stickyBox
+  },
+  data() {
+    return {
+      top: "unset"
+    };
+  },
+  computed: {
+    setTop() {
+      return this.$nextTick(() => {
+        const height = window.innerHeight;
+        this.top = height - 30 + "px";
+      });
+    }
   }
 };
 
@@ -182,5 +199,12 @@ function createMenuData() {
 }
 </script>
 
-<style>
+<style scoped >
+.el-menu-center {
+  display: flex;
+  justify-content: center;
+}
+.el-menu.el-menu--horizontal {
+  border-bottom: solid 0 #000 !important;
+}
 </style>
