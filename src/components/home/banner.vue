@@ -33,7 +33,7 @@ export default {
   },
   computed: {
     height: function() {
-      return window.innerHeight - 300 + "px";
+      return window.innerHeight  + "px";
     }
   }
 };
@@ -51,7 +51,7 @@ export default {
 }
 .full-page-banner{
     left: 0;
-    top: 60px;
+    top: -60px;
     right: 0;
 }
 </style>

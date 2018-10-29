@@ -1,5 +1,5 @@
 <template>
-  <sticky-box left='0' :top='setTop'>
+  <sticky-box left='0' :top='top'>
     <el-menu mode="horizontal" background-color="#000" class="el-menu-center" text-color="#fff" active-text-color="#be926f">
       <template v-for="(menuItem) in menus">
         <template v-if="menuItem.type==='item'">
@@ -34,17 +34,10 @@ export default {
   },
   data() {
     return {
-      top: "unset"
+      // top: window.innerHeight + "px"
+      top:'0px'
     };
   },
-  computed: {
-    setTop() {
-      return this.$nextTick(() => {
-        const height = window.innerHeight;
-        this.top = height - 30 + "px";
-      });
-    }
-  }
 };
 
 function createMenuData() {
