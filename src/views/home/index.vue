@@ -14,8 +14,11 @@ export default {
     return {
       options: {
         afterLoad: this.afterLoad,
-        scrollBar: false,
-        navigation: true
+        scrollBar: true,
+        navigation: true,
+        licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+        loopBottom: false, // 滚动到最后一个后，是否循环滚动到第一个
+        loopTop: false
       }
     };
   },
