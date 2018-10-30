@@ -2,12 +2,16 @@
   <full-page ref="fullpage" :options="options">
     <banner class="section"></banner>
     <service-we-apply class="section"></service-we-apply>
+    <advantages class="section"></advantages>
+    <uses class="section"></uses>
   </full-page>
 </template>
 
 <script>
 import banner from "../../components/home/banner";
 import serviceWeApply from "../../components/home/serviceWeApply";
+import advantages from '../../components/home/advantages';
+import uses from '../../components/home/uses';
 export default {
   name: "home",
   data: function() {
@@ -24,7 +28,9 @@ export default {
   },
   components: {
     banner,
-    serviceWeApply
+    serviceWeApply,
+    advantages,
+    uses
   },
   created: function() {},
   methods: {

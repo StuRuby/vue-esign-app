@@ -51,8 +51,9 @@ export default {
       window.addEventListener("scroll", this.scrollHandler, true);
     } else {
       this.boxStyle = {
-        position: "sticky",
+        position: "fixed",
         top: this.top,
+        width:'100%',
         // bottom:this.bottom,
         left: this.left,
         zIndex:9999
