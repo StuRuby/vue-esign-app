@@ -10,6 +10,7 @@
           <subMenu :key="menuItem.id" :menu="menuItem"></subMenu>
         </template>
       </template>
+      <user-center-btn></user-center-btn>
     </el-menu>
   </sticky-box>
 </template>
@@ -18,6 +19,7 @@
 import menuItem from "./menuItem.vue";
 import subMenu from "./subMenu.vue";
 import stickyBox from "../sticky";
+import userCenterBtn from "../UserCenterBtn.vue";
 
 export default {
   name: "Menu",
@@ -30,14 +32,15 @@ export default {
   components: {
     menuItem,
     subMenu,
-    stickyBox
+    stickyBox,
+    userCenterBtn
   },
   data() {
     return {
       // top: window.innerHeight + "px"
-      top:'0px'
+      top: "0px"
     };
-  },
+  }
 };
 
 function createMenuData() {

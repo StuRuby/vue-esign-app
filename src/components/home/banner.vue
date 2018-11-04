@@ -51,7 +51,7 @@ export default {
 }
 .full-page-banner{
     left: 0;
-    top: -60px;
+    top: 0px;
     right: 0;
 }
 </style>

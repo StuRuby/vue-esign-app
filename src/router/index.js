@@ -40,6 +40,20 @@ const routes = [
         component: resolve => require(['../views/develop/index.vue'], resolve)
     },
     {
+        path: '/login',
+        meta: {
+            title: '登录'
+        },
+        component: resolve => require(['../views/Login.vue'], resolve)
+    },
+    {
+        path:'/register',
+        meta:{
+            title:'注册',
+        },
+        component:resolve=>require(['../views/Register.vue'],resolve)
+    },
+    {
         path: '/',
         meta: {
             title: '首页'

@@ -1,16 +1,16 @@
 <template>
     <div class="home-words">
-        <Login></Login>
+        <user-center-btn></user-center-btn>
         <slot title="words"></slot>
     </div>
 </template>
 
 <script>
-import Login from './loginPanel';
+import userCenterBtn from '../shared/userCenterBtn';
 export default {
     name:'carouselItem',
     components:{
-        Login
+        userCenterBtn
     }
 }
 </script>
